@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller3">
+    <children>
+        <SplitPane dividerPositions="0.2506527415143603" orientation="VERTICAL" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <Pane fx:id="title_bar" prefHeight="202.0" prefWidth="1022.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <ImageView fx:id="title_img" fitHeight="140.0" fitWidth="242.0" layoutX="53.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/water.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="menu" fitHeight="109.0" fitWidth="648.0" layoutX="376.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/menu_bar.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="intro_button" layoutX="437.0" layoutY="73.0" mnemonicParsing="false" onAction="#handleIntroButtonAction" prefHeight="42.0" prefWidth="199.0" stylesheets="@style.css">
+                                    <graphic>
+                                        <ImageView fitHeight="47.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/intro.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="random_button" layoutX="720.0" layoutY="73.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="199.0" stylesheets="@style.css">
+                                    <graphic>
+                                        <ImageView fitHeight="49.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/random.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </children></Pane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane id="sceneBody" fx:id="sceneBody" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="401.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/fl.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="351.0" fitWidth="427.0" layoutX="33.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/fl_state.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="529.0" layoutY="122.0" prefHeight="424.0" prefWidth="472.0">
+                     <children>
+                        <Button mnemonicParsing="false" stylesheets="@style.css">
+                           <graphic>
+                              <ImageView fitHeight="104.0" fitWidth="235.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/facts.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="238.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="254.0" stylesheets="@style.css">
+                           <graphic>
+                              <ImageView fitHeight="93.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/video.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Text layoutX="48.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="There is no video available for playback" textAlignment="CENTER" wrappingWidth="414.21875">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="tb_button" layoutX="293.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleTbButtonAction" prefHeight="37.0" prefWidth="46.0" stylesheets="@style.css" />
+                  <Button fx:id="stjohn_button" layoutX="339.0" layoutY="178.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="53.0" stylesheets="@style.css" onAction="#handleStjohnButtonAction" />
+                  <Button fx:id="gulf_button" layoutX="215.0" layoutY="395.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="89.0" stylesheets="@style.css" onAction="#handleGulfButtonAction" />
+               </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

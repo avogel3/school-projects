@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller5">
+    <children>
+        <SplitPane dividerPositions="0.2506527415143603" orientation="VERTICAL" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <Pane fx:id="title_bar" prefHeight="202.0" prefWidth="1022.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <ImageView fx:id="title_img" fitHeight="140.0" fitWidth="242.0" layoutX="53.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/water.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="menu" fitHeight="109.0" fitWidth="648.0" layoutX="376.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/menu_bar.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="intro_button" layoutX="437.0" layoutY="73.0" mnemonicParsing="false" onAction="#handleIntroButtonAction" prefHeight="42.0" prefWidth="199.0" stylesheets="@style.css">
+                                    <graphic>
+                                        <ImageView fitHeight="47.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/intro.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="random_button" layoutX="720.0" layoutY="73.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="199.0" stylesheets="@style.css">
+                                    <graphic>
+                                        <ImageView fitHeight="49.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/random.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </children></Pane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane id="sceneBody" fx:id="sceneBody" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="401.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/fl.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="351.0" fitWidth="427.0" layoutX="33.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/fl_state.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="529.0" layoutY="122.0" prefHeight="424.0" prefWidth="472.0">
+                     <children>
+                        <Button mnemonicParsing="false" stylesheets="@style.css">
+                           <graphic>
+                              <ImageView fitHeight="104.0" fitWidth="235.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/facts.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="video_button" layoutX="238.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleVideoButtonAction" prefHeight="90.0" prefWidth="254.0" stylesheets="@style.css">
+                           <graphic>
+                              <ImageView fitHeight="93.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/video.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <AnchorPane layoutX="-3.0" layoutY="116.0" prefHeight="308.0" prefWidth="492.0">
+                           <children>
+                              <ScrollPane layoutX="86.0" layoutY="38.0" prefHeight="308.0" prefWidth="492.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="306.0" prefWidth="490.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1) The Guld of Mexico is the 9th largest body of water in the world" wrappingWidth="450.0" />
+                                          <Text layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2) It is esitmated that 50% of the Gulf's inland and coastal wetlands have been lost." wrappingWidth="450.0" />
+                                          <Text layoutX="14.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3) 60% of the coastal United States drains into the Gulf of Mexico - including 33 major river systems and 207 estuaries." wrappingWidth="450.0" />
+                                          <Text layoutX="14.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4) The Gulf has a biodiversity that includes 49 different shark species and 29 marine mammal species" wrappingWidth="450.0" />
+                                          <Text layoutX="14.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5) The Gulf of Mexico has Eight of the Top Twenty fishing ports in the nation by dollar value." wrappingWidth="450.0" />
+                                          <Text layoutX="133.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gulf of Mexico" wrappingWidth="211.21875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

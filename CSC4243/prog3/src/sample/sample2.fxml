@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+    <children>
+        <SplitPane dividerPositions="0.2506527415143603" orientation="VERTICAL" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <Pane fx:id="title_bar" prefHeight="202.0" prefWidth="1022.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <ImageView fx:id="title_img" fitHeight="140.0" fitWidth="242.0" layoutX="53.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/water.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="menu" fitHeight="109.0" fitWidth="648.0" layoutX="376.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/menu_bar.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="intro_button" layoutX="437.0" layoutY="73.0" mnemonicParsing="false" onAction="#handleIntroButtonAction" prefHeight="42.0" prefWidth="199.0" stylesheets="@style.css">
+                                    <graphic>
+                                        <ImageView fitHeight="47.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/intro.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="random_button" layoutX="720.0" layoutY="73.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="199.0" stylesheets="@style.css">
+                                    <graphic>
+                                        <ImageView fitHeight="49.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/random.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </children></Pane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane id="sceneBody" fx:id="sceneBody" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="414.0" fitWidth="1027.0" layoutX="-19.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/us.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="fl_button" layoutX="833.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="76.0" prefWidth="100.0" stylesheets="@style.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
