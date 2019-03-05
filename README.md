@@ -1,6 +1,6 @@
 # School Projects 🏫 💻 🐯
 
-This repo is a collection of most of my school projects completed at LSU during my time as a Computer Science Student. I may come back from time to time to update things/refactor. 
+This repo is a collection of some of my projects completed at LSU during my time as a Computer Science Student. I may come back from time to time to update things/refactor. 
 
 Some other related repos that have not been moved here yet are my implementations of:
 
